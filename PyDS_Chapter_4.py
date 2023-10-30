@@ -21,7 +21,7 @@ print(data.shape) # gets the shape of the array
 
 
 # Transposing Arrays and Swapping Axes
-#'''
+'''
 import numpy as np
 
 test_2d = np.array([[42, 13, 44],[63, 74, 93]])
@@ -29,5 +29,17 @@ test_2d = np.array([[42, 13, 44],[63, 74, 93]])
 test_swap = test_2d.reshape(2,3)
 print(test_swap)
 
+'''
+
+
+# Sorting
+# Reference for reverse sorting an array: https://stackoverflow.com/questions/26984414/efficiently-sorting-a-numpy-array-in-descending-order
 #'''
+import numpy as np
+
+
+
+
+#'''
+
 
