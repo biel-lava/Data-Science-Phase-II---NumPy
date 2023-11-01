@@ -28,5 +28,12 @@ def count_dupli(arr):
 print(count_dupli(sample_array))
 '''
 
-
+'''
+Problem # 27: Removing Duplicates
+Date: 10/31/23
+Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+Difficulty: Easy
+Notes:  
+    - Make a function to return the number of unique numbers in the array as variable k
+'''
 
