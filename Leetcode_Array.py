@@ -28,6 +28,8 @@ def count_dupli(arr):
 print(count_dupli(sample_array))
 '''
 
+
+
 '''
 Problem # 27: Remove Element
 Date: 11/02/23
@@ -37,7 +39,7 @@ Notes:
     - Given a value 'val' remove all occurance of val in the array
     - Return the updated length of array after removal as k
 '''
-#'''
+'''
 nums = [0,0,1,1,1,1,1,1,2,2,3,3,4] # test array
 val = 1
 
@@ -46,7 +48,22 @@ while val in nums:
 
 print(nums)
 
-#'''
+'''
+
+
+'''
+Problem # 35: Search Insert Position
+Date: 11/02/23
+Link: https://leetcode.com/problems/search-insert-position/
+Difficulty: Easy
+Notes:  
+    - if target value is in array return the index
+    - If target value not in array return the possible index na paglalagyan nung target value (in ascending order pa rin dapat)
+'''
+
+
+
+
 
 
 
