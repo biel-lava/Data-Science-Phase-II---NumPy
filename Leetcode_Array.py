@@ -29,11 +29,15 @@ print(count_dupli(sample_array))
 '''
 
 '''
-Problem # 27: Removing Duplicates
-Date: 10/31/23
-Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+Problem # 27: Remove Element
+Date: 11/02/23
+Link: https://leetcode.com/problems/remove-element/
 Difficulty: Easy
 Notes:  
-    - Make a function to return the number of unique numbers in the array as variable k
+    - Given a value 'val' remove all occurance of val in the array
+    - Return the updated length of array after removal as k
 '''
+
+nums = [0,0,1,1,1,2,2,3,3,4] # test array
+
 
