@@ -61,7 +61,19 @@ Notes:
     - If target value not in array return the possible index na paglalagyan nung target value (in ascending order pa rin dapat)
 '''
 
+nums = [1,3,5,6]
+target = 2
+target_index = 0
 
+if target not in nums:
+    for x in range(0, len(nums)):
+        if ((nums[x-1]-target) < (nums[x]-target)) and ((nums[x]-target)<0):
+            target_index = x
+        print(target_index)
+else: 
+    for num in nums:
+        if target == num:
+            print(f"Index of target: {nums.index(target)}")
 
 
 
