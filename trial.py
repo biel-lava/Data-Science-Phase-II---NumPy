@@ -8,15 +8,13 @@ print(test_3d)
 '''
 
 
-sample_array = [0,0,1,1,1,2,2,3,3,4]
-k = 1
+nums = [0,0,1,1,1,1,1,1,2,2,3,3,4] # test array
+aliens = [1, 4]
+val = 1
 
-#'''
-for x in range(1, len(sample_array)-1):
-    if sample_array[x] != sample_array[x-1]:
-        sample_array.pop()
-#'''
+for num in aliens:
+    while num in nums:
+        nums.remove(num)
 
 
-print(sample_array)
-
+print(nums)

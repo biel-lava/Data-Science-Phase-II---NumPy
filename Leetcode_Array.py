@@ -37,7 +37,18 @@ Notes:
     - Given a value 'val' remove all occurance of val in the array
     - Return the updated length of array after removal as k
 '''
+#'''
+nums = [0,0,1,1,1,1,1,1,2,2,3,3,4] # test array
+val = 1
 
-nums = [0,0,1,1,1,2,2,3,3,4] # test array
+while val in nums:
+    nums.remove(val)
+
+print(nums)
+
+#'''
+
+
+
 
 
