@@ -25,3 +25,13 @@ else:
         if target == num:
             print(f"Index of target: {nums.index(target)}")
 '''
+
+trial = [79, 64, 63, 95, 66, 5, 63, 76, 86, 78]
+
+target = 76
+curr_ind = (len(trial)-1)/2
+curr_num = True
+
+while curr_num:
+    if trial[curr_ind] > target:
+        curr_ind = ()/2
