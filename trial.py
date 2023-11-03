@@ -9,7 +9,7 @@ test_3d = [rd.randint(1, 100) for x in range(10)]
 print(test_3d)
 '''
 
-
+'''
 nums = [1,3,5,6]
 target = 0
 
@@ -24,3 +24,4 @@ else:
     for num in nums:
         if target == num:
             print(f"Index of target: {nums.index(target)}")
+'''
