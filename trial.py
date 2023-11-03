@@ -25,13 +25,24 @@ else:
         if target == num:
             print(f"Index of target: {nums.index(target)}")
 '''
-
+#'''
+# first attempt for binary search
 trial = [79, 64, 63, 95, 66, 5, 63, 76, 86, 78]
 
 target = 76
-curr_ind = (len(trial)-1)/2
-curr_num = True
+min_ind = 0
+max_ind = len(trial)-1
 
-while curr_num:
-    if trial[curr_ind] > target:
-        curr_ind = ()/2
+curr_num = False
+
+while (min_ind <= max_ind and not curr_num):
+    mid_ind = (max_ind + min_ind) // 2
+    if trial[mid_ind] > target: #  cases na mas malaki yung middle element dun sa target na number
+        max_ind = mid_ind - 1
+    if trial[mid_ind] < target:
+        min_ind = mid_ind + 1
+    if trial[mid_ind] == target:
+        curr_num = True
+        print(f"Index of target: {mid_ind}")
+
+#'''
