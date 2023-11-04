@@ -78,17 +78,24 @@ else:
             print(f"Index of target: {nums.index(target)}")
 '''
 
-# Mk 2: Binary search approach
-
+# Mk 2: Binary search integration
+''''
 nums = [1,3,5,6]
-target = 7
+target = 2
+
+min_ind = 1
+max_ind = len(nums)-1
 
 if target in nums:
     print(nums.index(target))
 
+if target < nums[min_ind-1]:
+    print(f"Index of target: {min_ind-1}")
+
+if target > nums[max_ind]:
+    print(f"Index of target: {max_ind+1}")
+
 else:
-   min_ind = 1
-   max_ind = len(nums)-1
    curr_num = False
    while (min_ind <= max_ind and not curr_num):
         mid_ind = (max_ind + min_ind) // 2
@@ -99,3 +106,27 @@ else:
         if nums[mid_ind-1]<target<nums[mid_ind]: # cases where in between na talaga yung target number
             curr_num = True
             print(f"Index of target: {mid_ind}")
+'''
+
+# Mk 3: Most efficient method (from solutions sa leetcode)
+#'''
+
+nums = [1,3,5,6]
+target = 6
+
+low = 0
+high = len(nums)
+
+
+while low < high:
+    mid = (high + low) // 2
+    if target > nums[mid]:
+        low = mid + 1
+    else:
+        high = mid
+
+print(low) 
+
+#'''
+
+
