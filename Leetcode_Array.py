@@ -109,10 +109,10 @@ else:
 '''
 
 # Mk 3: Most efficient method (from solutions sa leetcode)
-#'''
+'''
 
 nums = [1,3,5,6]
-target = 6
+target = 7
 
 low = 0
 high = len(nums)
@@ -121,12 +121,22 @@ high = len(nums)
 while low < high:
     mid = (high + low) // 2
     if target > nums[mid]:
-        low = mid + 1
+        low = mid + 1 # magaadjust yung low index (increasing) until maging false na yung condition sa while 
     else:
-        high = mid
+        high = mid # oyherwise mauusog yung higher bounds for the index
 
 print(low) 
 
-#'''
+'''
 
 
+
+
+'''
+Problem # 66: Plus one 
+Date: 11/04/23
+Link: https://leetcode.com/problems/plus-one/
+Difficulty: Easy
+Notes:  
+    - Convert array into an integer then add "1" then convert the sum into an array of integers
+'''
