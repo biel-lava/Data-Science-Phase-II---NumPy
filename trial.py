@@ -27,9 +27,10 @@ else:
 '''
 #'''
 # first attempt for binary search
-trial = [79, 64, 63, 95, 66, 5, 63, 76, 86, 78]
+trial = [19, 22, 38, 44, 59, 67, 72, 75, 80, 99]
 
-target = 76
+target = 80
+
 min_ind = 0
 max_ind = len(trial)-1
 
