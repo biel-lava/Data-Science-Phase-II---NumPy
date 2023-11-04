@@ -29,7 +29,7 @@ else:
 # first attempt for binary search
 trial = [19, 22, 38, 44, 59, 67, 72, 75, 80, 99]
 
-target = 80
+target = 25
 
 min_ind = 0
 max_ind = len(trial)-1

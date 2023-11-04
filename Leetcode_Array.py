@@ -61,6 +61,8 @@ Notes:
     - If target value not in array return the possible index na paglalagyan nung target value (in ascending order pa rin dapat)
 '''
 
+#Mk 1 Solution: Brute force approach
+'''
 nums = [1,3,5,6]
 target = 2
 target_index = 0
@@ -74,10 +76,26 @@ else:
     for num in nums:
         if target == num:
             print(f"Index of target: {nums.index(target)}")
+'''
 
+# Mk 2: Binary search approach
 
+nums = [1,3,5,6]
+target = 7
 
+if target in nums:
+    print(nums.index(target))
 
-
-
-
+else:
+   min_ind = 1
+   max_ind = len(nums)-1
+   curr_num = False
+   while (min_ind <= max_ind and not curr_num):
+        mid_ind = (max_ind + min_ind) // 2
+        if nums[mid_ind] > target: #  cases na mas malaki yung mid element of array dun sa target na number
+            max_ind = mid_ind - 1
+        if nums[mid_ind] < target: # cases where mas maliit yung mid element of array dun sa target na number 
+            min_ind = mid_ind + 1
+        if nums[mid_ind-1]<target<nums[mid_ind]: # cases where in between na talaga yung target number
+            curr_num = True
+            print(f"Index of target: {mid_ind}")
