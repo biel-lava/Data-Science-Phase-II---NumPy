@@ -144,7 +144,19 @@ Notes:
 
 #'''
 digits = [1,2,3]
+digit = ""
 
+def convert(nums, digit): # converts the array of int into a single integer
+    for x in nums:
+        digit += str(x)
+    return int(digit) + 1
+
+def to_str(digits):
+    sum = [int(x) for x in str(convert(digits, digit))]
+    return sum
+
+
+print(to_str(digits))
 
 
 #'''
