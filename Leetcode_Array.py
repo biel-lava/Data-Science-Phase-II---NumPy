@@ -138,5 +138,13 @@ Date: 11/04/23
 Link: https://leetcode.com/problems/plus-one/
 Difficulty: Easy
 Notes:  
-    - Convert array into an integer then add "1" then convert the sum into an array of integers
+    - Convert array into an integer, then add "1", then convert the sum into an array of integers
+    - Helpful link: https://stackoverflow.com/questions/19599364/how-to-convert-array-of-integers-into-an-integer-in-c
 '''
+
+#'''
+digits = [1,2,3]
+
+
+
+#'''
