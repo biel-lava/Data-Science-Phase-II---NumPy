@@ -142,7 +142,7 @@ Notes:
     - Helpful link: https://stackoverflow.com/questions/19599364/how-to-convert-array-of-integers-into-an-integer-in-c
 '''
 
-#'''
+'''
 digits = [1,2,3]
 digit = ""
 
@@ -158,5 +158,16 @@ def to_str(digits):
 
 print(to_str(digits))
 
+'''
 
-#'''
+'''
+Problem # 88: Merge sorted array
+Date: 11/07/23
+Link: https://leetcode.com/problems/merge-sorted-array/
+Difficulty: Easy
+Notes:  
+    - 
+'''
+
+nums1 = [1,2,3,0,0,0]
+nums2 = [2,5,6]
