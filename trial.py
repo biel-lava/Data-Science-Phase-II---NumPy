@@ -1,4 +1,4 @@
-#print("elsa") # print tester
+#$print("elsa") # print tester
 
 # Random array generator (integer)
 ''''
@@ -25,8 +25,9 @@ else:
         if target == num:
             print(f"Index of target: {nums.index(target)}")
 '''
-#'''
+
 # first attempt for binary search
+'''
 trial = [19, 22, 38, 44, 59, 67, 72, 75, 80, 99]
 
 target = 25
@@ -46,4 +47,12 @@ while (min_ind <= max_ind and not curr_num):
         curr_num = True
         print(f"Index of target: {mid_ind}")
 
-#'''
+'''
+
+nums = [-1,0,0,3,3,3,0,0,0]
+
+while nums[len(nums)-1] == 0:
+    nums.pop()
+
+
+print(nums)

@@ -166,8 +166,25 @@ Date: 11/07/23
 Link: https://leetcode.com/problems/merge-sorted-array/
 Difficulty: Easy
 Notes:  
-    - 
+    - Combine num1 and num2 arrays 
+    - Ignore the 0 elements of the array
 '''
-
-nums1 = [1,2,3,0,0,0]
+# Mk 1 solution
+nums1 = [-1,0,0,3,3,3,0,0,0]
+m = 3
 nums2 = [2,5,6]
+n = 3
+
+while nums1[len(nums1)-1] == 0: # checks if the last element of the array is still 0
+    nums1.pop()
+    if len(nums1) == 0:
+            break
+for x in nums2:
+    if x != 0 and x != None:
+        nums1.append(x)
+
+while len(nums1)!= n+m:
+    nums1.append(0)
+
+nums1.sort()
+print(nums1)
