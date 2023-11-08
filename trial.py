@@ -1,4 +1,4 @@
-#$print("elsa") # print tester
+print("elsa") # print tester
 
 # Random array generator (integer)
 ''''
@@ -48,11 +48,26 @@ while (min_ind <= max_ind and not curr_num):
         print(f"Index of target: {mid_ind}")
 
 '''
+'''
+nums1 = [-1,0,0,3,3,3,0,0,0]
+m = 3
+nums2 = [2,5,6]
+n = 3
 
-nums = [-1,0,0,3,3,3,0,0,0]
+a = m-1
+b = n-1
+write_index = m+n-1
 
-while nums[len(nums)-1] == 0:
-    nums.pop()
+while b >= 0:
+		if a >= 0 and nums1[a] > nums2[b]:
+			nums1[write_index] = nums1[a]
+			a -= 1
+		else:
+			nums1[write_index] = nums2[b]
+			b -= 1
+
+		write_index -= 1
 
 
-print(nums)
+print(nums1)
+'''

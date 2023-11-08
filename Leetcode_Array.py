@@ -185,6 +185,5 @@ for x in nums2:
 
 while len(nums1)!= n+m:
     nums1.append(0)
-
 nums1.sort()
 print(nums1)
