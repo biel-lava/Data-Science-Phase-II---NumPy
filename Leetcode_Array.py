@@ -170,8 +170,9 @@ Notes:
     - Ignore the 0 elements of the array
 '''
 # Mk 1 solution
+'''
 nums1 = [-1,0,0,3,3,3,0,0,0]
-m = 3
+m = 6
 nums2 = [2,5,6]
 n = 3
 
@@ -179,7 +180,7 @@ while nums1[len(nums1)-1] == 0: # checks if the last element of the array is sti
     nums1.pop()
     if len(nums1) == 0:
             break
-for x in nums2:
+for x in nums2: # appends the non zero elements of nums2 to nums1
     if x != 0 and x != None:
         nums1.append(x)
 
@@ -187,3 +188,30 @@ while len(nums1)!= n+m:
     nums1.append(0)
 nums1.sort()
 print(nums1)
+'''
+
+# Mk 2 solution (from leetcode)
+'''
+nums1 = [-1,0,0,3,3,3,0,0,0]
+m = 6
+nums2 = [2,5,6]
+n = 3
+
+a = m-1
+b = n-1
+write_index = m+n-1
+
+while b >= 0: # backward approach, fills nums1 with the elements of nums2 from the last index position going forward sa unahan
+		if a >= 0 and nums1[a] > nums2[b]: # checks if the last element of nums1 is 0
+			nums1[write_index] = nums1[a] # if not zero ang ilalagay dun sa last element of updated nums1 ay yung last elemant of nums1
+			a -= 1
+		else:
+			nums1[write_index] = nums2[b] # if zero nga then ang ilalagay would be yung last element of nums2
+			b -= 1
+
+		write_index -= 1
+
+
+print(nums1)
+'''
+
