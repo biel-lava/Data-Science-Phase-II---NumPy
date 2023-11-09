@@ -215,3 +215,14 @@ while b >= 0: # backward approach, fills nums1 with the elements of nums2 from t
 print(nums1)
 '''
 
+
+'''
+Problem # 108: Conver Sorted Array to Binary Search Tree
+Date: 11/09/23
+Link: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+Difficulty: Easy
+Notes:  
+    - Root node is always 0
+    - Sa left side lagi yung smaller value than the root node
+    - Sa right side lagi yung larger value than the root node
+'''
