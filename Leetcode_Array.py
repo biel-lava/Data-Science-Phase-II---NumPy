@@ -226,3 +226,15 @@ Notes:
     - Sa left side lagi yung smaller value than the root node
     - Sa right side lagi yung larger value than the root node
 '''
+
+class TreeNode:
+     def __init__(self, val=0, left=None, right=None):
+         self.val = val
+         self.left = left
+         self.right = right
+
+nums = [-10,-3,0,5,9]
+
+def sortedArrayToBST(self, nums):
+    for num in nums:
+        
